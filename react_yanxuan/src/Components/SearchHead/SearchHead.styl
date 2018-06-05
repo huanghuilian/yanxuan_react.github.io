@@ -1,0 +1,37 @@
+  @import '../../assets/stylus/mixins.styl'
+  .head
+    position fixed!important
+    left 0
+    top 0
+    z-index 100
+    width 100%
+    .search_top
+      height (43/$unit)
+      background-color #fff
+      width 11rem
+      margin-left (-10/$unit)
+      .searchInput
+        background-color #f4f4f4
+        height (28/$unit)
+        border-radius 4px
+        padding-left (10/$unit)
+        margin (10/$unit) (10/$unit) 0 (20/$unit)
+        float left
+        i
+          font-size (18/$unit)
+        input
+          background-color #f4f4f4
+          line-height (28/$unit)
+          width 7.4rem
+          padding-left (20/$unit)
+          &::-webkit-input-placeholder
+            font-size (14/$unit)
+            text-align left
+            line-height (28/$unit)
+            padding-left (10/$unit)
+      .cancel
+        display block
+        float left
+        line-height (43/$unit)
+        font-size (16/$unit)
+        width (35/$unit)

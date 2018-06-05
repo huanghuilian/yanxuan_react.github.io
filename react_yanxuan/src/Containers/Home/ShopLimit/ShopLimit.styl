@@ -1,0 +1,71 @@
+  @import "../../../assets/stylus/mixins.styl"
+  /*严选限时购*/
+  .shopLimit
+    height (190/$unit)
+    .m_indexFlash
+      padding (15/$unit) (20/$unit) (15/$unit) (28/$unit)
+      margin-bottom (10/$unit)
+      height (190/$unit)
+      background-color #fff
+      .left_item
+        display inline-block
+        width (160/$unit)
+        height (160/$unit)
+        padding-top (40/$unit)
+        .title
+          font-size (18/$unit)
+          line-height (18/$unit)
+          margin-bottom (12/$unit)
+          color #333
+        .m_countDown
+          display inline-block
+          span
+            display inline-block
+            width (30/$unit)
+            height (28/$unit)
+            color #fff
+            background-color #444
+            text-align center
+            line-height (28/$unit)
+            &.colon
+              display inline
+              color #333
+              background-color transparent
+              font-size (20/$unit)
+        .next-title
+          margin-top (20/$unit)
+          color: #333
+          font-size (12/$unit)
+          line-height (12/$unit)
+          height (12/$unit)
+      .right_item
+        position relative
+        display inline-block
+        float right
+        width (158/$unit)
+        height (158/$unit)
+        .goodPic
+          width 100%
+          height 100%
+          img
+            width 100%
+            height 100%
+        .price
+          position absolute
+          bottom (18/$unit)
+          right (8/$unit)
+          background-color rgba(244,143,24,.95)
+          width 1.28rem
+          height 1.28rem
+          border-radius 0.64rem
+          padding-top (10/$unit)
+          span
+            color #fff
+          .priceNow
+            width 100%
+            height 0.37rem
+            line-height 0.37rem
+          .priceOld
+            width 100%
+            height 0.37rem
+            line-height 0.37rem

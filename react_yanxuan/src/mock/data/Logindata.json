@@ -1,0 +1,36 @@
+{
+  "users":[
+    {
+      "userId":2018052901,
+      "userName":"aaa",
+      "pwd":"123"
+    },
+    {
+      "userId":2018052902,
+      "userName":"bbb",
+      "pwd":"123"
+    },
+    {
+      "userId":2018052903,
+      "userName":"ccc",
+      "pwd":"123"
+    }
+  ],
+  "phoneUsers":[
+    {
+      "userId":2018052904,
+      "phone":15210671942,
+      "code":123456
+    },
+    {
+      "userId":2018052905,
+      "phone":15259926932,
+      "code":123123
+    },
+    {
+      "userId":2018052906,
+      "phone":13328942690,
+      "code":456456
+    }
+  ]
+}

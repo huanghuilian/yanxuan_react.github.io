@@ -1,0 +1,110 @@
+@import '../../assets/stylus/mixins.styl'
+.banner_item
+  width 100%
+  height 5.6rem
+
+  margin-top (72/$unit)
+  img
+    height 5.6rem
+.m_subCategoryListContainer
+  width 100%
+  .hd
+    height (60/$unit)
+    background-color #fff
+    text-align center
+    line-height (60/$unit)
+    .title
+      padding-top (10/$unit)
+      font-size (16/$unit)
+      margin (10/$unit) 0
+      line-height 1
+    .desc
+      color #999
+      font-size (12/$unit)
+      line-height 1
+.listContainer
+  background-color #fff
+  .list
+    width 10rem
+    text-align center
+    .item
+      box-sizing border-box
+      width 5rem
+      float left
+      background-color #fff
+      position relative
+      overflow hidden
+      z-index 10
+      padding 0rem (5/$unit) (16.5/$unit) (10/$unit)
+      a
+        display block
+        width 100%
+        .itemTop
+          position relative
+          padding-bottom 120%
+          box-sizing border-box
+          width 100%
+          border-radius (10/$unit)
+          background-color #f4f4f4
+          img
+            display block
+            position absolute
+            width 100%
+            height 4.6
+            border-radius (2/$unit) (2/$unit) 0 0
+            background-color #f4f4f4
+          .desc
+            position absolute
+            bottom 0
+            width 100%
+            background-color #F1ECE2
+            border-radius 0 0 (2/$unit) (2/$unit)
+            color #9F8A60
+            line-height (14/$unit)
+            padding (10/$unit) (5/$unit)
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            font-size (12/$unit)
+        .gradientPrice
+          widt 5rem
+          height 0.5rem
+          line-height 0.4rem
+          overflow hidden
+          margin (10/$unit) 0 (10/$unit) (10/$unit)
+          span
+            display inline-block
+            float left
+            padding (2.5/$unit) (8/$unit)
+            background-color #f48f18
+            color #fff
+            font-size (11/$unit)
+            border-radius (1/$unit)
+        .name
+          text-align left
+          margin (5/$unit) 0 0 (10/$unit)
+          paddig (5/$unit)
+          white-space nowrap
+          overflow hidden
+          text-overflow ellipsis
+          line-height 0.64rem
+          span
+            color #333333
+            text-align left
+        .price
+          text-align left
+          span
+            color #b4282d
+            line-height 1
+            padding (5/$unit)
+            font-size (16/$unit)
+        .selectedColor
+          position absolute
+          top (10/$unit)
+          left (15/$unit)
+          border 1px solid #b4a078
+          border-radius (2/$unit)
+          div
+            text-align center
+            color #b4a078
+            font-size (12/$unit)

@@ -1,0 +1,74 @@
+  @import '../../assets/stylus/mixins.styl'
+  #app
+    width 100%
+    heigth 100%
+    position relative
+    .footWrap
+      border-top 1px solid rgba(0,0,0,.15)
+      background-color #414141
+      width 10rem
+      .foot
+        padding .72rem .26667rem .37333rem
+        width 100%
+        .footContent
+          height (31/$unit)
+          text-align center
+          position relative
+          .goApp
+            font-size (12/$unit)
+            padding (6/$unit) (16/$unit)
+            height (30/$unit)
+            border 1px solid #999
+            border-radius (4/$unit)
+            color #fff
+          .goWeb
+            font-size (12/$unit)
+            padding (6/$unit) (25/$unit)
+            height (30/$unit)
+            border 1px solid #999
+            border-radius (4/$unit)
+            color #fff
+            margin-left (20/$unit)
+        .copyright
+          text-align center
+          font-size 0.32rem
+          line-height (16/$unit)
+          color #999
+    .present
+      position fixed
+      right 0
+      bottom 20%
+      z-index 100
+      width (56/$unit)
+      height (40/$unit)
+      border-radius 25% 5% 5% 25%
+      background-color #fff
+      border 1px #eee solid
+      text-align center
+      transform translateX((0/$unit))
+      animation move step-end 2s
+      @keyframes move{
+        from {transform :translateX((56/$unit))}
+        to {transform:translateX(0)}
+      }
+      i
+        line-height (38/$unit)
+        color firebrick
+        font-size (30/$unit)
+    .Top
+      position fixed
+      right (11.5/$unit)
+      bottom 1.7rem
+      vertical-align middle
+      width (41/$unit)
+      height (41/$unit)
+      z-index 100
+      border 1px #ddd solid
+      border-radius 50%
+      text-align center
+      vertical-align center
+      background-color #fff
+      i
+        font-size (28/$unit)
+        line-height (40/$unit)
+        color #999

@@ -1,0 +1,63 @@
+  @import "../../../assets/stylus/mixins.styl"
+  .m_floor
+    margin-bottom (10/$unit)
+    background-color #fff
+    .t_hd
+      height (55/$unit)
+      text-align center
+
+      span
+        font-size (17/$unit)
+        height 100%
+        line-height (55/$unit)
+      i
+        font-size (17/$unit)
+  .m-indexTopics-slide
+    padding (0/$unit) (18/$unit)
+    height (220/$unit)
+    .inner
+      height 100%
+      .list
+        float left
+        height 100%
+        white-space nowrap
+        .item
+          display inline-block
+          width (287/$unit)
+          margin-right (20/$unit)
+          .imgWrap
+            display block
+            width (287/$unit)
+            height (160/$unit)
+            overflow hidden
+            border-radius 4px
+            margin-bottom (8/$unit)
+            img
+              position relative
+              width (287/$unit)
+              height 100%
+          .line
+            height (20/$unit)
+            margin-top
+            margin-bottom (1/$unit)
+            .title
+              display inline-block
+              white-space nowrap
+              overflow hidden
+              text-overflow ellipsis
+              float left
+              font-size (14/$unit)
+              font-weight 400
+            .price
+              font-size (14/$unit)
+              float right
+              color #b4282d
+
+          .desc
+            height (25/$unit)
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            color #7F7F7F
+            text-align left
+            font-size (13/$unit)

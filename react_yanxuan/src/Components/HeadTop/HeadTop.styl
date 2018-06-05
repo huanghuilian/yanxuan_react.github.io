@@ -1,0 +1,83 @@
+@import "../../assets/stylus/mixins.styl"
+.head
+  position fixed!important
+  left 0
+  top 0
+  z-index 100
+  width (375/$unit)
+  background #fff
+  box-sizing border-box
+  #homeHead
+    margin-left -(12/$unit)
+    background-color #fff
+    width (375/$unit)
+    height (73/$unit)
+    .header_top
+      height (43/$unit)
+      width 100%
+      display flex
+      flex-flow row nowrap
+      align-items center
+      padding (8/$unit) (15/$unit)
+      box-sizing border-box
+      .logo
+        display inline-block
+        width (69/$unit)
+        height (20/$unit)
+        margin-right (10/$unit)
+        font-size (16/$unit)
+      .search
+        background-color #ededed
+        border-radius (4/$unit)
+        text-align center
+        flex 1
+        height (28/$unit)
+        align-items center
+        justify-content center
+        line-height (28/$unit)
+        i
+          font-size (17/$unit)
+          line-height (28/$unit)
+        .placeHolder
+          color #666
+          font-size 14px
+    .header_navigator
+      height (30/$unit)
+      background-color #fff
+      &.border-1px
+        bottom-border-1px(#d9d9d9)
+      .nav_container
+        height 100%
+      .list
+        clearFix()
+        //box-sizing border-box
+        height 100%
+        margin 0 (12/$unit)
+        float left
+        white-space nowrap
+        &.maxRight
+          transform translateX(-448px)!important
+      .tab
+        display inline-block
+        box-sizing border-box
+        margin-left (24/$unit)
+        height (30/$unit)
+        width (44/$unit)
+        line-height (30/$unit)
+        .txt
+          font-size (14/$unit)
+          display inline-block
+          height 100%
+          padding 0 (8/$unit)
+          color #333
+          &.active
+            color #b4282d
+            position relative
+            &:after
+              content ''
+              position absolute
+              background-color #b4282d
+              left 0
+              bottom 0
+              width 100%
+              height (2/$unit)
